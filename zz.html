@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mcjs作者简介</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .info-label {
+            color: #666;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .info-value {
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #999;
+            font-size: 13px;
+        }
+
+        .ip-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar">HYC</div>
+        <h1>mcjs作者</h1>
+        <p class="subtitle">开发者简介</p>
+        
+        <div class="info-item">
+            <span class="info-label">姓名</span>
+            <span class="info-value">黄奕辰</span>
+        </div>
+        
+        <div class="info-item">
+            <span class="info-label">IP属地</span>
+            <span class="ip-badge">北京</span>
+        </div>
+        
+        <div class="footer">
+            mcjs 官方认证开发者
+        </div>
+    </div>
+</body>
+</html>
